@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/mytextview01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <TextView 
+        android:id="@+id/mytextview_title"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="三軸加速度 - 資料擷取"
+		android:textSize="25sp"
+		android:layout_margin="15sp"
+		android:layout_marginBottom="10sp"
+		android:layout_below="@+id/mytextview01"
+	/>
+	<TextView 
+	    android:id="@+id/mytextview_x"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="X"
+		android:textSize="25sp"
+		android:layout_margin="15sp"
+		android:layout_below="@+id/mytextview_title"
+	/>
+	<TextView
+	    android:id="@+id/mytextview_y" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="Y"
+		android:textSize="25sp"
+		android:layout_margin="15sp"
+		android:layout_below="@+id/mytextview_x"
+	/>
+	<TextView 
+	    android:id="@+id/mytextview_z"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="Z"
+		android:textSize="25sp"
+		android:layout_margin="15sp"
+		android:layout_below="@+id/mytextview_y"
+	/>
+	<Button 
+	    android:id="@+id/mybutton"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Change to Orientation"
+	    android:textSize="25sp"
+		android:layout_margin="15sp"
+		android:layout_below="@+id/mytextview_z"
+	    />
+
+</RelativeLayout>
